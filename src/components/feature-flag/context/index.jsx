@@ -7,7 +7,7 @@ export default function FeatureFlagGlobalState({ children }) {
   const [loading, setLoading] = useState(false);
   const [enabledFlags, setEnabledFlags] = useState("");
 
-  async function fetchFeatureFlags(params) {
+  async function fetchFeatureFlags() {
     try {
       setLoading(true);
       // Original service call
